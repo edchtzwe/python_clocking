@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title>STAFF RECORD</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<div id="left">
+		<h1>STAFF</h1>
+
+		<div id="search">
+			<select>
+				<option value="search">search</option>
+				<option value="jason">Jason Dennis</option>
+				<option value="mohd">Mohd Arif</option>
+				<option value="john">John Lai</option>
+			</select>
+		</div>
+	</div>
+	
+	<div id="right">
+		<table>
+			<tr>
+				<td>
+					<?php
+						print date("m/d/y G.i:s<br>", time());
+					?>
+				</td>
+			</tr>
+		</table>
+		<input type="button" id="clockin" value="CLOCK-IN"/>
+		<input type="button" id="clockout" value="CLOCK-OUT"/>
+		<input type="button" id="view" value="VIEW-RECORDS"/>
+	</div>
+</body>
+
+</html>
+	
